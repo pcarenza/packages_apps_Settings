@@ -1,19 +1,28 @@
 package com.android.settings.AOKP;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.app.ActivityManager;
+=======
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Point;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.os.UserHandle;
 import android.os.UserManager;
+=======
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
 import android.preference.CheckBoxPreference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.Preference;
+<<<<<<< HEAD
 import android.preference.Preference.OnPreferenceChangeListener;
+=======
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
 import android.preference.SeekBarPreference;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -26,6 +35,11 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+<<<<<<< HEAD
+=======
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
 public class LockscreenNotifications extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_LOCKSCREEN_NOTIFICATIONS = "lockscreen_notifications";
@@ -42,6 +56,10 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
     private static final String KEY_OFFSET_TOP = "offset_top";
     private static final String KEY_CATEGORY_GENERAL = "category_general";
     private static final String KEY_EXCLUDED_APPS = "excluded_apps";
+<<<<<<< HEAD
+=======
+    private static final String KEY_NOTIFICATION_COLOR = "notification_color";
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
 
     private CheckBoxPreference mLockscreenNotifications;
     private CheckBoxPreference mPocketMode;
@@ -56,6 +74,10 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
     private CheckBoxPreference mPrivacyMode;
     private SeekBarPreference mOffsetTop;
     private AppMultiSelectListPreference mExcludedAppsPref;
+<<<<<<< HEAD
+=======
+    private ColorPickerPreference mNotificationColor;
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
     private Context mContext;
 
     @Override
@@ -137,6 +159,19 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
         mNotificationsHeight.setOnPreferenceChangeListener(this);
         mNotificationsHeight.setEnabled(mLockscreenNotifications.isChecked());
 
+<<<<<<< HEAD
+=======
+        mNotificationColor = (ColorPickerPreference) prefs.findPreference(KEY_NOTIFICATION_COLOR);
+        mNotificationColor.setAlphaSliderEnabled(true);
+        int color = Settings.AOKP.getInt(cr,
+                Settings.AOKP.LOCKSCREEN_NOTIFICATIONS_COLOR, 0x55555555);
+        String hexColor = String.format("#%08x", (0xffffffff & color));
+        mNotificationColor.setSummary(hexColor);
+        mNotificationColor.setDefaultValue(color);
+        mNotificationColor.setNewPreviewColor(color);
+        mNotificationColor.setOnPreferenceChangeListener(this);
+
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
         mExcludedAppsPref = (AppMultiSelectListPreference) findPreference(KEY_EXCLUDED_APPS);
         Set<String> excludedApps = getExcludedApps();
         if (excludedApps != null) mExcludedAppsPref.setValues(excludedApps);
@@ -220,6 +255,17 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
             int max = Math.round((float)displaySize.y * (1f - (mOffsetTop.getProgress() / 100f)) /
                     (float)mContext.getResources().getDimensionPixelSize(R.dimen.notification_row_min_height));
             mNotificationsHeight.setMaxValue(max);
+<<<<<<< HEAD
+=======
+        } else if (pref == mNotificationColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(value)));
+            pref.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.AOKP.putInt(getActivity().getContentResolver(),
+                    Settings.AOKP.LOCKSCREEN_NOTIFICATIONS_COLOR, intHex);
+            return true;
+>>>>>>> ce6efd6... Lockscreen Notifications [2/2]
         } else if (pref == mExcludedAppsPref) {
             storeExcludedApps((Set<String>) value);
             return true;
