@@ -34,7 +34,7 @@
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">Memory</string>
     <!-- About phone screen,  AOKP version name-->
-    <string name="mod_version">AOKP version</string>
+    <string name="mod_version">VU version</string>
     <!-- About phone screen,  AOKP unknown name-->
     <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
@@ -46,11 +46,11 @@
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">AOKP Statistics</string>
-    <string name="anonymous_statistics_summary">Help make AOKP better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_title">VanillaUnicorn Statistics</string>
+    <string name="anonymous_statistics_summary">Help make VU better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into AOKP Statistics will allow non-personal data to be submitted to the
-        developers of AOKP to track unique installations across devices. The information submitted includes an unique identifier,
+    <string name="anonymous_statistics_warning">Opting into VU Statistics will allow non-personal data to be submitted to the
+        developers of VanillaUnicorn to track unique installations across devices. The information submitted includes an unique identifier,
         which does not compromise your privacy or personal data. The data is submitted once weekly, during boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
     <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Preview data</string>
@@ -59,7 +59,7 @@
     <string name="anonymous_learn_more">Learn more</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">Enable or Disable AOKP Statistics</string>
+    <string name="anonymous_notification_desc">Enable or Disable VU Statistics</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unique ID</string>
@@ -96,10 +96,10 @@
     <string name="end_time_title">End</string>
 
     <!-- ROM control -->
-    <string name="rom_control_title">ROM control</string>
+    <string name="rom_control_title">ROMControl</string>
 
     <!-- Themes settings  -->
-    <string name="themes_settings_title">Themes</string>
+    <string name="themes_settings_title">Themer</string>
 
     <!-- Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Quick pin unlock</string>
