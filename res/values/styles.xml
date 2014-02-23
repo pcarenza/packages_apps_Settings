@@ -79,7 +79,7 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="Theme.CreateShortCut" parent="android:Theme.Holo.DialogWhenLarge">
+    <style name="Theme.CreateShortCut" parent="android:Theme.Holo.Light.DialogWhenLarge">
     </style>
 
     <style name="PreferenceHeaderPanelSinglePane">
@@ -192,8 +192,8 @@
         <item name="android:windowIsFloating">true</item>
     </style>
 
-    <style name="CryptKeeperBlankTheme" parent="@android:style/Theme.Holo.NoActionBar">
-        <item name="android:background">#ff000000</item>
+    <style name="CryptKeeperBlankTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:background">#ffffffff</item>
     </style>
 
     <style name="SecurityPreferenceButtonContainer" parent="@android:style/Holo.SegmentedButton">
