@@ -70,7 +70,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
 
         mLockscreenNotifications = (CheckBoxPreference) prefs.findPreference(KEY_LOCKSCREEN_NOTIFICATIONS);
         mLockscreenNotifications.setChecked(Settings.AOKP.getInt(cr,
-                    Settings.AOKP.LOCKSCREEN_NOTIFICATIONS, 1) == 1);
+                    Settings.AOKP.LOCKSCREEN_NOTIFICATIONS, 0) == 1);
 
         mPocketMode = (CheckBoxPreference) prefs.findPreference(KEY_POCKET_MODE);
         mPocketMode.setChecked(Settings.AOKP.getInt(cr,
