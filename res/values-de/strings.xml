@@ -2043,4 +2043,36 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"Foto aufnehmen"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"Foto aus Galerie auswählen"</string>
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+    
+    <!-- Lockscreen Notifications -->
+    <!-- Categories --> 
+    <string name="general">General</string>
+    <string name="layout">Layout</string>
+    <string name="privacy">Sicherheit</string>
+
+    <string name="lockscreen_notifications">Lockscreen Benachrichtigungen</string>
+    <string name="lockscreen_notifications_summary">Ausstehende Benachrichtigungen auf dem Lockscreen anzeigen</string>
+    <string name="pocket_mode">Taschenmodus</string>
+    <string name="pocket_mode_summary">Bildschirm einschalten und Benachrichtigungen anzeigen, sobald man das Gerät aus der Tasche holt. Bildschirm wird wieder ausgemacht, wenn es das Gerät wieder in der Tasche ist.</string>
+    <string name="show_always">Immer Anzeigen</string>
+    <string name="show_always_summary">Immer Bildschirm einschalten sobald das Gerät aus der Tasche gezogen wird, auch ohne vorhandene Benachrichtigungen</string>
+    <string name="hide_low_priority">Ausblenden niedriger Priorität</string>
+    <string name="hide_low_priority_summary">Ausblenden niedriger Prioritäten wie Google Now Wetteranzeigen</string>
+    <string name="hide_non_clearable">Verstecke nicht ignorierbare Benachrichtigungen</string>
+    <string name="hide_non_clearable_summary">Verstecke alle nicht ignorierbare Benachrichtigungen</string>
+    <string name="dismiss_all">Erlauben von Ignorieren aller Benachrichtigungen</string>
+    <string name="dismiss_all_summary">Erlauben von Ignorieren aller Benachrichtigungen. Natürlich werden diese immer noch in der Benachrichtigungsleiste angezeigt.</string>
+    <string name="expanded_view">Erweiterte Benachrichtigungsanzeige</string>
+    <string name="expanded_view_summary">Fügen Sie Möglichkeit zum Wechseln zwischen der normalen und ausgebreiteten Ansicht durch langes Berühren hinzu. Die ausgebreitete Ansicht zeigt manchmal mehr private Information, so könnten Sie es deaktivieren wollen.</string>
+    <string name="force_expanded_view">Erweiterte Ansicht erzwingen</string>
+    <string name="force_expanded_view_summary">Benachrichtigungen standartgemäß erweitert anzeigen. Sie werden noch zum Wechseln zwischen der ausgebreiteten und normalen Ansicht fähig sein.</string>
+    <string name="wake_on_notification">Aufwachen bei Benachrichtigungen</string>
+    <string name="wake_on_notification_summary">Wecken des Gerätes bei Benachrichtigungsempfang</string>
+    <string name="notifications_height">Benachrichtigungsanzahl</string>
+    <string name="notifications_height_summary">Anzahl der gleichzeitig angezeigten Benachrichtigungen</string>
+    <string name="offset_top">Abstand zum oberen Rand des Bildschirms:</string>
+    <string name="privacy_mode">Privacy-Modus</string>
+    <string name="privacy_mode_summary">Deaktiviert Benachrichtigungsanzeige und dessen Verwerfen. Nur die Icons der Benachrichtigungen werden so angezeigt.</string>
+    <string name="excluded_apps_title">Ausgeschlossene Anwendungen</string>
+    <string name="excluded_apps_summary">Ausgeschlossene Anwendungen werden nicht als Benachrichtigungen angezeigt.</string>
 </resources>
