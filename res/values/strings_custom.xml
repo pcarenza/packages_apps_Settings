@@ -155,4 +155,9 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+    <!-- Headers -->
+    <string name="header_category_displaystreaming">Streaming</string>
+    <string name="header_category_notifications">Notifications</string>
+
 </resources>

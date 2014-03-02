@@ -2043,6 +2043,10 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"Foto aufnehmen"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"Foto aus Galerie auswählen"</string>
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+
+    <!-- Headers -->
+    <string name="header_category_displaystreaming">Streaming</string>
+    <string name="header_category_notifications">Benachrichtigungen</string>
     
     <!-- Lockscreen Notifications -->
     <!-- Categories --> 
