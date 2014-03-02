@@ -50,25 +50,24 @@
                 android:title="@string/screensaver_settings_title"
                 android:fragment="com.android.settings.DreamSettings" />
 
-        <header	
-         android:title="@string/header_category_displaystreaming" />
+        <PreferenceCategory	
+               android:title="@string/header_category_displaystreaming" />
 
        <PreferenceScreen
                 android:key="wifi_display"
                 android:title="@string/wifi_display_settings_title"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
-        <header	
-        android:title="@string/header_category_notifications" />
+        <PreferenceCategory	
+                android:title="@string/header_category_notifications" />
         
         <PreferenceScreen
-            android:title="@string/lockscreen_notifications"
-            android:fragment="com.android.settings.AOKP.LockscreenNotifications" />
+                android:title="@string/lockscreen_notifications"
+                android:fragment="com.android.settings.AOKP.LockscreenNotifications" />
 
         <CheckBoxPreference
             android:key="notification_pulse"
             android:title="@string/notification_pulse_title"
             android:persistent="false" />
-
         
-</PreferenceScreen>
+ </PreferenceScreen>
