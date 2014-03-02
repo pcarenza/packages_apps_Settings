@@ -159,5 +159,6 @@
     <!-- Headers -->
     <string name="header_category_displaystreaming">Streaming</string>
     <string name="header_category_notifications">Notifications</string>
+    <string name="header_category_displayset">Display Settings</string>
 
 </resources>

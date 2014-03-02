@@ -18,14 +18,23 @@
         android:title="@string/display_settings"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.android.settings.BrightnessPreference
-                android:title="@string/brightness"
-                android:persistent="false"/>
-
-        <PreferenceScreen
+       <PreferenceScreen
                 android:key="wallpaper"
                 android:title="@string/wallpaper_settings_title"
                 android:fragment="com.android.settings.WallpaperTypeSettings" />
+
+       <PreferenceScreen
+                android:key="screensaver"
+                android:title="@string/screensaver_settings_title"
+                android:fragment="com.android.settings.DreamSettings" />
+
+       <PreferenceCategory	
+                android:title="@string/header_category_displayset" />
+
+
+       <com.android.settings.BrightnessPreference
+                android:title="@string/brightness"
+                android:persistent="false"/>
 
         <CheckBoxPreference
             android:key="accelerometer"
@@ -44,11 +53,6 @@
                 android:title="@string/title_font_size"
                 android:summary="@string/summary_font_size"
                 android:dialogTitle="@string/dialog_title_font_size" />
-
-        <PreferenceScreen
-                android:key="screensaver"
-                android:title="@string/screensaver_settings_title"
-                android:fragment="com.android.settings.DreamSettings" />
 
         <PreferenceCategory	
                android:title="@string/header_category_displaystreaming" />
