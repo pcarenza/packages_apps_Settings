@@ -53,18 +53,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
     private static final String KEY_SCREEN_SAVER = "screensaver";
+    private static final String KEY_ANIMATION_OPTIONS = "category_animation_options";
     private static final String KEY_POWER_CRT_MODE = "system_power_crt_mode";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
-    private CheckBoxPreference mNotificationPulse;
-    private WarnedListPreference mFontSizePref;
-    private PreferenceCategory mLightOptions;
-    private PreferenceScreen mNotificationPulse;
-    private PreferenceScreen mBatteryPulse;
-    private CheckBoxPreference mVolumeWake;
     private ListPreference mCrtMode;
 
     private final Configuration mCurConfig = new Configuration();
